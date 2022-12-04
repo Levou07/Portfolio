@@ -1,0 +1,82 @@
+.body{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    .hello{
+        color: #5425fb;
+    }
+    h1{
+        color: #c8c8c8;
+        font-family: sans-serif;
+        font-size: 34px;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+    h2{
+        color: #55bad8;
+        font-family: sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    p{
+        max-width: 400px;
+        flex-wrap: wrap;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #1470e8;
+        margin-top: 20px;
+    }
+    .auto-type{
+        color: gray;
+        font-size: 34px;
+        font-weight: 400;
+        font-family: sans-serif;
+    }
+}
+
+.btn{
+    color: white;
+    padding: 7px 20px;
+    background: linear-gradient(225deg, #fadf93, #00807a, #d400ff);
+    border: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.btn:hover{
+    color: #c3c3c3;
+}
+
+.inp1{
+    display: none;
+}
+
+// circle
+
+.o{
+    padding: 15px;
+    background: linear-gradient(225deg, #28262a, #0496ea, #00f67f);
+    border-radius: 20%;
+    width: 200px;
+    height: 200px;
+}
+.v{
+    background-image: url('/flowers-276014__340.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border: 5px solid white;
+    padding: 80px;
+    border-radius: 50%;
+}
+.l{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #00fa15;
+    top: 155px;
+    left: 75px;
+    border-radius: 50%;
+}

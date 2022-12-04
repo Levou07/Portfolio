@@ -1,0 +1,35 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // position: sticky;
+    // top: 0;
+}
+header a{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.head__center a{
+    margin-left: 10px;
+    color: #737272;
+}
+.head__center a:hover{
+    position: relative;
+    bottom: 2px;
+    transition: 0.9s ease all;
+}
+
+
+.yt{
+    color: red;
+}
+.tel{
+    margin-left: 10px;
+    color: #005eff;
+}
+.yt:hover, .tel:hover{
+    color: gray;
+    transition: 0.9s ease all;
+}
