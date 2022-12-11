@@ -1,1 +1,0 @@
-let inp1Style = inp1.style

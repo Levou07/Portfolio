@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Login if you admin">
+    <button><a class="href">Login</a></button>
+</body>
+<script>
+    let inp = document.querySelector('input')
+    let href = document.querySelector('.href')
+
+    window.addEventListener('keyup', e=>{
+        if(e.keyCode == 13 && inp.value == '1234'){
+            href.setAttribute('href', './index.html')
+        }
+        console.log(e.keyCode)
+    })
+    href.addEventListener('click', e=>{ 
+        if(inp.value == '1234'){
+            href.setAttribute('href', './index.html')
+        }
+    })
+</script>
+</html>
