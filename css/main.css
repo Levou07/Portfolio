@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 body {
   background-color: white;
 }
@@ -78,24 +79,6 @@ header a {
   font-family: sans-serif;
 }
 
-.btn {
-  color: white;
-  padding: 7px 20px;
-  background: linear-gradient(225deg, #fadf93, #00807a, #d400ff);
-  border: none;
-  font-family: sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.btn:hover {
-  color: #c3c3c3;
-}
-
-.inp1 {
-  display: none;
-}
-
 .o {
   padding: 15px;
   background: linear-gradient(315deg, #28262a, #0496ea, #00f67f);
@@ -122,6 +105,10 @@ header a {
   top: 155px;
   left: 75px;
   border-radius: 50%;
+}
+
+.admin {
+  display: flex;
 }
 
 .b-button {
@@ -187,4 +174,108 @@ header a {
   border-radius: 50%;
   background: linear-gradient(350deg, #cde8b5, #96d35f, #669d34, #38571a, #263e0f);
   border: none;
+}
+
+.wrapper2 {
+  display: grid;
+  margin: 200px 90px auto;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .wrapper2 {
+    margin: 200px auto;
+  }
+}
+.wrapper2 .box {
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+  perspective: 1000px;
+}
+
+.wrapper2 .box .front-face {
+  background: rgba(114, 114, 114, 0.0117647059);
+  height: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 10px 30px 10px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+
+.box:first-child {
+  background: url("https://thumbs.dreamstime.com/z/webdesign-%D0%BF-%D0%B0%D0%BD-%D0%B2%D0%B5%D0%B1%D1%81%D0%B0%D0%B9%D1%82-35224663.jpg");
+  background-position: 0px 30px;
+  background-size: cover;
+}
+
+.box:nth-child(2) {
+  background: url("https://www.feedough.com/wp-content/uploads/2018/04/ADVERTISING-07.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.box .front-face .icon {
+  height: 80px;
+}
+
+.box .front-face .icon i {
+  font-size: 65px;
+}
+
+.box .front-face span,
+.box .back-face span {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box .front-face .icon i,
+.box .front-face span {
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box .back-face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 220px;
+  width: 100%;
+  padding: 30px;
+  -webkit-text-fill-color: #ffffff;
+  opacity: 0;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  transform: translateX(-80px) rotateX(-90deg);
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+
+.box .back-face p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.box:hover .back-face {
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+
+.box:hover .front-face {
+  opacity: 0;
+  transform: translateY(-120px) rotateX(90deg);
+}
+
+.wrapper2 i {
+  position: relative;
+  bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
